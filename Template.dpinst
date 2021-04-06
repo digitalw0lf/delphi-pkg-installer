@@ -1,0 +1,5 @@
+﻿[Install]
+;Package=Project1.dproj
+;DcuPath=Dcu\$(Platform)\$(Config)
+;BrowsingPath=Source
+;Platforms=Win32;Win64
