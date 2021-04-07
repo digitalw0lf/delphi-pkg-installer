@@ -1,5 +1,20 @@
-﻿[Install]
-;Package=Project1.dproj
+﻿; DelphiPkgInstaller config file for a package.
+; For every parameter, you can specify several values separated by semicolon.
+; E.g. several project files: Package=MyPackage_D.dproj;MyPackage_R.dproj
+; All paths are relative to config file location.
+
+[Install]
+;  Package name(s) to compile. Can be omitted if matches this config name (MyPackage.dpinst -> MyPackage.dproj)
+;Package=Template.dproj
+
+;  This is added to "Search paths".
+;  Default: $(Platform)\$(Config)
 ;DcuPath=Dcu\$(Platform)\$(Config)
+
+;  This is added to "Browsing paths".
+;  Default: .
 ;BrowsingPath=Source
+
+;  Compile for this platforms. Configs are hard-coded as "Debug;Release"
+;  Default: Win32;Win64
 ;Platforms=Win32;Win64
